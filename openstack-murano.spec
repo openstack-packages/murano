@@ -10,7 +10,7 @@
 
 Name:          openstack-%{pypi_name}
 Version:       2.0.0
-Release:       1%{?dist}
+Release:       1%{?dist}.1
 Summary:       OpenStack Murano Service
 
 License:       ASL 2.0
@@ -223,7 +223,7 @@ exit 0
 %files api
 %doc README.rst
 %license LICENSE
-%{_localstatedir}/cache/murano
+%{_localstatedir}/cache/murano/meta
 %{_bindir}/murano-api
 %{_unitdir}/murano-api.service
 
